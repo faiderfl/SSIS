@@ -22,22 +22,26 @@ Esta parte tendrá un origen en excel, una transformación de ordenamiento y un 
 -----------------------------------------------------------------
 Evitar datos duplicados:
 
-5.Generar una transformación de multicast para los demas procesos.
-6. Utilizar un lookup y un conversor de datos para evitar datos duplicados en la BD.
+    5.Generar una transformación de multicast para los demas procesos.
+    
+    6. Utilizar un lookup y un conversor de datos para evitar datos duplicados en la BD.
 
 Homicidios por Genero:
-7. Utilizar un conditional split por año con las sentencias:
+
+    7. Utilizar un conditional split por año con las sentencias:
     
-    2003-2010:  [Año] >= 2003 && [Año] <= 2010
-    2010-2016:  [Año] > 2010
+        2003-2010:  [Año] >= 2003 && [Año] <= 2010
+        2010-2016:  [Año] > 2010
    
 Homicidios por Años:
- 8. Utilizar un conditional split por año con las sentencias:
+
+    8. Utilizar un conditional split por año con las sentencias:
  
-   SexoM: Sexo == "HOMBRE"
-   SexoF: Sexo == "MUJER"
+       SexoM: Sexo == "HOMBRE"
+       SexoF: Sexo == "MUJER"
 
 Creación de Jobs: 
-9. Importar archivo al servidor de SSIS
-10.Crear Job con el package.
+
+    9. Importar archivo al servidor de SSIS
+    10.Crear Job con el package.
 
